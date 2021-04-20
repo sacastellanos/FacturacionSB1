@@ -61,11 +61,11 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.listaCategoriasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idComboBox = new System.Windows.Forms.ComboBox();
-            this.imagProdPictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.imagProdPictureBox = new System.Windows.Forms.PictureBox();
             activoLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
             existenciaLabel = new System.Windows.Forms.Label();
@@ -170,7 +170,7 @@
             this.listaProductosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaProductosBindingNavigator.Name = "listaProductosBindingNavigator";
             this.listaProductosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaProductosBindingNavigator.Size = new System.Drawing.Size(630, 25);
+            this.listaProductosBindingNavigator.Size = new System.Drawing.Size(638, 25);
             this.listaProductosBindingNavigator.TabIndex = 9;
             this.listaProductosBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -364,17 +364,6 @@
             this.idComboBox.TabIndex = 19;
             this.idComboBox.ValueMember = "Id";
             // 
-            // imagProdPictureBox
-            // 
-            this.imagProdPictureBox.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.imagProdPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listaProductosBindingSource, "ImagProd", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.imagProdPictureBox.Location = new System.Drawing.Point(387, 126);
-            this.imagProdPictureBox.Name = "imagProdPictureBox";
-            this.imagProdPictureBox.Size = new System.Drawing.Size(196, 120);
-            this.imagProdPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagProdPictureBox.TabIndex = 20;
-            this.imagProdPictureBox.TabStop = false;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(387, 257);
@@ -412,16 +401,26 @@
             this.textBox1.TabIndex = 24;
             this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
+            // imagProdPictureBox
+            // 
+            this.imagProdPictureBox.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.imagProdPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listaProductosBindingSource, "ImagProd", true));
+            this.imagProdPictureBox.Location = new System.Drawing.Point(387, 122);
+            this.imagProdPictureBox.Name = "imagProdPictureBox";
+            this.imagProdPictureBox.Size = new System.Drawing.Size(196, 129);
+            this.imagProdPictureBox.TabIndex = 25;
+            this.imagProdPictureBox.TabStop = false;
+            // 
             // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 324);
+            this.ClientSize = new System.Drawing.Size(638, 324);
+            this.Controls.Add(this.imagProdPictureBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.imagProdPictureBox);
             this.Controls.Add(idLabel1);
             this.Controls.Add(this.idComboBox);
             this.Controls.Add(imagProdLabel);
@@ -479,10 +478,10 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.BindingSource listaCategoriasBindingSource;
         private System.Windows.Forms.ComboBox idComboBox;
-        private System.Windows.Forms.PictureBox imagProdPictureBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox imagProdPictureBox;
     }
 }
