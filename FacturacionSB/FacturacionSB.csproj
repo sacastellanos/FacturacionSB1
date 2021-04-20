@@ -261,6 +261,7 @@
     <None Include="Properties\DataSources\BLFacturacionSB.EmpresaBL.datasource" />
     <None Include="Properties\DataSources\BLFacturacionSB.Factura.datasource" />
     <None Include="Properties\DataSources\BLFacturacionSB.FacturaBL.datasource" />
+    <None Include="Properties\DataSources\BLFacturacionSB.FacturaDetalle.datasource" />
     <None Include="Properties\DataSources\BLFacturacionSB.Producto.datasource" />
     <None Include="Properties\DataSources\BLFacturacionSB.ProductosBL.datasource" />
     <None Include="Properties\DataSources\BLFacturacionSB.Resultado.datasource" />

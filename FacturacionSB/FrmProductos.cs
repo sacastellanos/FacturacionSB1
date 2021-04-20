@@ -177,5 +177,17 @@ namespace FacturacionSB
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                if(textBox1.Text != "")
+                {
+                    var buscar = textBox1.Text;
+                    listaProductosBindingSource.DataSource = _productos.ObtenerProductos(buscar);
+                }
+            }
+        }
     }
 }

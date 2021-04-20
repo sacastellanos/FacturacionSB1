@@ -61,5 +61,32 @@ namespace FacturacionSB
         {
 
         }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                if(textBox1.Text != "")
+                {
+                    textBox2.Focus();
+
+                }
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                if (textBox2.Text != "")
+                {
+                    button1_Click(null, null);
+
+                }
+            }
+        }
+
+        
+        }
     }
-}
+
