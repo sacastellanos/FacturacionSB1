@@ -32,10 +32,12 @@ namespace FacturacionSB
             button1.Text = "Verificando...";
             Application.DoEvents();
 
-            var resultado = _seguridad.Autorizar(usuario, contrasena);
+            var usuarioDB = _seguridad.Autorizar(usuario, contrasena);
 
-            if(resultado == true)
+            if(usuarioDB != null)
             {
+                Utils.NombreUsuario = usuarioDB.Nombre;
+
                 this.Close();
             }
             else
